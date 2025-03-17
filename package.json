@@ -2,10 +2,15 @@
   "name": "forkify-app",
   "version": "1.0.0",
   "description": "Recipe Application",
-  "default": "index.html",
+  "targets" : {
+    "main" : {
+      "source" : "index.html",
+      "distDir": "dist"
+    }
+  },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --dist-dir dist"
   },
   "author": "Dave Krisopras Essanto",
   "license": "ISC",
